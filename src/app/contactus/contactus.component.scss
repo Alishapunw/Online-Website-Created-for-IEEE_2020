@@ -1,0 +1,361 @@
+/*---------------Navbar--------*/
+body{
+    margin: 0;
+    padding: 0;
+    background-image:  url('/assets/img/bg3.jpg');
+    overflow-x: auto;
+    background-attachment: fixed;
+}
+
+#symbol{
+    float: left;
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 14px 12px;
+    margin-right: 50px;
+    margin-left: 100px;
+    font-size: 1.2em;
+}
+
+#symbol a:hover{
+    background-color: #66FCF1;
+    color: #0B0C10;
+}
+
+.logo{                  
+    width: 60px;
+    height: 45px;
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 4px;
+    display: block;
+}
+
+header{                     
+    position: fixed;
+    top: 0;
+    left:0;
+    padding: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    z-index: 1000;
+    transition: background-color 1s;
+}
+
+header nav{                 
+    float: right;
+}
+header nav ul{               
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li{            
+    list-style: none;
+}
+header nav ul li a {         
+    height:50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color:#fff;
+    text-decoration: none;
+    display: block;
+}
+header nav ul li a.active,     
+header nav ul li a:hover{
+    color:#0B0C10;
+    background: #66FCF1;
+}
+
+.menu-toggle{                
+    color:#fff;
+    float:right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.bg-dark {
+    background-color: #0B0C10;
+    
+}
+
+.bg-dark a {
+    color: white;
+}
+
+@media (max-width:991px)           
+{
+    header{
+        padding: 0 20px;
+    }
+    .menu-toggle{
+        display:block;
+    }
+    header nav{
+        
+        position: absolute;
+        width:100%;
+        height: calc(100vh-50px);
+        background: #333;
+        top:50px;
+        left:-100%;
+        transition: 0.5s;
+    }
+    header nav.active{
+        left: 0;
+        margin-bottom: 100px;
+    }
+    header nav ul{
+        display:block;
+        text-align: center;
+    }
+    header nav ul li a{
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+}
+/*----------Navbar end--------*/
+
+
+
+
+
+
+/*-----footer------*/
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer {
+    background: #0b0c10;
+    padding: 0 0 10px 0;
+    color: #eee;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+#footer .footer-top {
+    margin-top: 0px;
+    background: #1f2833;
+    padding: 10px 0 0 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer .footer-top .social-links a {
+    font-size: 32px;
+    display: contents;
+    transition: 0.9s;
+    color: #fff;
+}
+
+#footer .footer-top .social-links a:hover {
+    color: #66fcf1;
+    text-decoration: none;
+}
+
+#footer .footer-top h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #66fcf1;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 12px;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+#footer .footer-top h4::before {
+    right: 0;
+    background: #1f2833;
+}
+
+#footer .footer-top .footer-links {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-logo {
+    padding-top: 20px;
+}
+
+#footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+    padding-right: 8px;
+    color: rgb(245, 243, 238);
+}
+
+#footer .footer-top .footer-links ul li {
+    border-bottom: 1px solid rgb(170, 170, 170);
+    padding: 10px 0;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+    color: #eee;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+    color: #66FCF1;
+    text-decoration: none;
+}
+
+#footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+#footer .footer-top .footer-contact p {
+    line-height: 26px;
+}
+
+#footer .copyright {
+    text-align: center;
+    padding-top: 10px;
+    background-color: #0b0c10;
+}
+
+.container {
+    box-sizing: border-box;
+    line-height: 1.3;
+    margin: 0 auto;
+    padding: 1vw;
+    text-align: center;
+    width: 90vw;
+}
+/* ----------footer end----------------- */
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Contact ]*/
+
+.container-contact100 {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: transparent;
+    position: relative;
+    z-index: 1;
+    padding-top: 0px;
+}
+
+.contact100-map {
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 0px;
+}
+
+.wrap-contact100 {
+    width: 670px;
+    background: #1f2833;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    opacity: 0.8;
+}
+
+
+/*==================================================================
+[ Title form ]*/
+
+.contact100-form-title {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #66fcf1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.contact100-form-title-1 {
+    font-family: Dosis;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 7px;
+    opacity: 1;
+}
+
+.contact100-form-title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+/*==================================================================
+[ Form ]*/
+
+.contact100-form {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 43px 88px 57px 190px;
+}
+
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+@media (max-width: 576px) {
+    .contact100-form {
+        padding: 43px 15px 57px 117px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact100-form {
+        padding: 43px 15px 57px 15px;
+    }
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Contact - END ]*/
